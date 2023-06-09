@@ -9,7 +9,7 @@
 <body>
     <a href="index.html">Home</a>
     <br><br>
-    <form action="" method="post">
+    <form action="index.php" method="post" enctype="multipart/form-data">
         
         <!-- Adding the for attribute below & giving it a value is great for screen readers -->
         <label for="username">username:</label>
@@ -25,11 +25,40 @@
         <label for="phone">phone #:</label>
         <input type="tel" id="phone" placeholder="(+44)7986-85-22-56" pattern="[0-9]{5}-[0-9]{3}-[0-9]{3}"><br>
 
+        <!-- The code below shows how to create a calender select form -->
         <label for="bday">birthdate:</label>
         <input type="date" id="bday"><br>
 
+        <!-- The code below is to show how to create a select quantity form -->
         <label for="quantity">quantity:</label>
         <input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+        <label for="title">title:</label>
+
+        <!-- The code below is to show how to create a select radio button for 3 options -->
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="PhD.">PhD..</label>
+        <input type="radio" id="PhD." value="PhD." name="title"><br>
+
+        <!-- The code below is for a forms dropdown menu -->
+        <label for="payment">payment</label>
+        <select name="" id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select><br>
+
+        <label for="subscribe">subscribe:</label>
+        <input type="checkbox" id="subscribe"><br>
+
+        <label for="comment">comment:</label>
+        <textarea name="" id="comment" cols="30" rows="5"></textarea><br>
+
+        <label for="file">file:</label>
+        <input type="file" id="file" accept="image/png, image/jpeg"><br>
 
 
 
